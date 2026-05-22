@@ -212,6 +212,10 @@
       background: #33397A;
   }
 
+  .card_bottom:hover .previous_timing {
+      color: #ced2ff;
+  }
+
   .ellipses {
       background: transparent;
       border: none;

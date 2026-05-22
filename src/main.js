@@ -23,7 +23,7 @@ const updateCards = (data, timeFrame) => {
     }
 
     data.forEach((item) => {
-        const className = item.title.toLowerCase().replace(' ', '');
+        const className = item.title.toLowerCase().split(' ').join('');
         const cardBottom = document.querySelector(`.${className} .card_bottom`);
         cardBottom.innerHTML = cardData(
             previousText, item.title, item.timeframes[timeFrame].current,
@@ -42,12 +42,13 @@ fetch('./data.json').then((response) => response.json()).then((result) => {
                 button.classList.remove('active');
                 button.setAttribute('aria-current', 'false');
             })
-            console.log(this)
             this.classList.add('active');
             this.setAttribute('aria-current', 'true');
 
-            const timeframe = this.className.replace(' active', '');
+            const timeframe = this.dataset.timeframe;
             updateCards(result, timeframe);
         })
     })
+}).catch((error) => {
+    console.log("Error fetching the data:", error);
 })

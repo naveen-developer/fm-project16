@@ -15,9 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
 
-  </style>
 </head>
 
 <body>
@@ -32,17 +30,19 @@
         </div>
       </div>
       <div class="profile_bottom">
-        <ul>
-          <li>
-            <button type="button" class="daily" aria-current="false">Daily</button>
-          </li>
-          <li>
-            <button type="button" class="active weekly" aria-current="true">Weekly</button>
-          </li>
-          <li>
-            <button type="button" class="monthly" aria-current="false">Monthly</button>
-          </li>
-        </ul>
+        <nav aria-label="Timeframe Filter">
+          <ul>
+            <li>
+              <button type="button" class="daily" aria-current="false" data-timeframe="daily">Daily</button>
+            </li>
+            <li>
+              <button type="button" class="active weekly" aria-current="true" data-timeframe="weekly">Weekly</button>
+            </li>
+            <li>
+              <button type="button" class="monthly" aria-current="false" data-timeframe="monthly">Monthly</button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
