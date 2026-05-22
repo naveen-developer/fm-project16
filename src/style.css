@@ -67,8 +67,8 @@
   }
 
   .ttd_container {
-      width: 1116px;
-      height: 520px;
+      width: min(1116px, 90%);
+      margin: auto;
 
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -161,7 +161,7 @@
   }
 
   .exercise {
-      background-color: #44BC76;
+      background-color: #44bc76e0;
   }
 
   .social {
@@ -189,7 +189,7 @@
   }
 
   .previous_timing {
-      color: #7078C9;
+      color: #a1a9ff;
   }
 
   .card h2 {
@@ -210,6 +210,12 @@
 
   .card_bottom:hover {
       background: #33397A;
+  }
+
+  .ellipses {
+      background: transparent;
+      border: none;
+      cursor: pointer;
   }
 
   @media (max-width: 1024px) {

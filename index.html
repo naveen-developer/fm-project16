@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -25,7 +25,7 @@
 
     <div class="profile">
       <div class="profile_top">
-        <img src="./images/image-jeremy.png" alt="">
+        <img src="./images/image-jeremy.png" alt="Portrait of Jeremy Robson">
         <div>
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
@@ -34,13 +34,13 @@
       <div class="profile_bottom">
         <ul>
           <li>
-            <button type="button" class="active daily">Daily</button>
+            <button type="button" class="daily" aria-current="false">Daily</button>
           </li>
           <li>
-            <button class="weekly" type="button" class="weekly">Weekly</button>
+            <button type="button" class="active weekly" aria-current="true">Weekly</button>
           </li>
           <li>
-            <button class="monthly" type="button" class="monthly">Monthly</button>
+            <button type="button" class="monthly" aria-current="false">Monthly</button>
           </li>
         </ul>
       </div>
@@ -53,7 +53,7 @@
       <div class="card_bottom">
         <div class="title">
           <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="">
+          <button class="ellipses" aria-label="Open options"><img src="./images/icon-ellipsis.svg" alt=""></button>
         </div>
         <p class="timing">5hrs</p>
         <p class="previous_timing">Yesterday - 7hrs</p>
@@ -96,7 +96,7 @@
     </div>
 
   </main>
-  <script src="main.js"></script>
+  <script src="./src/main.js"></script>
 
 </body>
 
